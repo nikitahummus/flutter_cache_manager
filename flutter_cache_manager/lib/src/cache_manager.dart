@@ -210,7 +210,7 @@ class CacheManager implements BaseCacheManager {
     cacheObject ??= CacheObject(
       url,
       key: key,
-      relativePath: '${const Uuid().v1()}.$fileExtension',
+      relativePath: '${const Uuid().v4()}.$fileExtension',
       validTill: DateTime.now().add(maxAge),
     );
 
